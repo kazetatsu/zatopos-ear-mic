@@ -4,6 +4,13 @@
 	(generator_version "8.0")
 	(uuid "e6ed543b-f5df-4af1-90bb-8e380cee6410")
 	(paper "A4")
+	(title_block
+		(title "zatopos-ear-mic")
+		(date "2024-10-30")
+		(company "Shinagawa Kazemaru")
+		(comment 1 "Two microphone & one A/D converter")
+		(comment 2 "For zatopos-ear")
+	)
 	(lib_symbols
 		(symbol "Analog_ADC:MCP3002"
 			(pin_names

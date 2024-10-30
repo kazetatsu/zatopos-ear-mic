@@ -1,0 +1,140 @@
+(footprint "GF063P"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 5.8 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "4d13de6b-1efc-453e-a877-2cf3701c3880")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.153)
+			)
+		)
+	)
+	(property "Value" "GF063P"
+		(at 0 -5.1 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "049cdcfd-980d-417f-9d08-128ae0f86839")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" "GF063P"
+		(at 0.1 -9.6 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8ff11072-d5bf-4230-ab58-d8cb4f745660")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "156d9600-ee42-4302-9b63-cc25285f7eb6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "fe3a5f6a-d11e-466d-8573-1b5fe25b3130")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_rect
+		(start -3.4 -4)
+		(end 3.4 2.8)
+		(stroke
+			(width 0.153)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "5a6ec5ff-3413-408b-b413-55eca29ee077")
+	)
+	(fp_rect
+		(start -4 -4.5)
+		(end 4 3.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(fill none)
+		(layer "F.CrtYd")
+		(uuid "927fba57-81c4-4b1b-aa49-4bea62bd980d")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0.1 -6.7 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "70cf1bdb-f61f-48bb-ae0a-18ef500cabf4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.1)
+			)
+			(justify bottom)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at -2.5 0)
+		(size 1.524 1.524)
+		(drill 0.762)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "e455feee-06b2-41b6-ad6d-8c20a2419ae1")
+	)
+	(pad "2" thru_hole circle
+		(at 0 -2.5)
+		(size 1.524 1.524)
+		(drill 0.762)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "ce8c4f8f-7359-4a8c-ac4f-926277cae4cf")
+	)
+	(pad "3" thru_hole circle
+		(at 2.5 0)
+		(size 1.524 1.524)
+		(drill 0.762)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "6cf28035-bd84-4f23-8a71-ae9268c354de")
+	)
+	(model "${KICAD8_KAZE_3DMODEL_DIR}/GF063P.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 0 0)
+		)
+	)
+)

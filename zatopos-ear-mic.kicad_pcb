@@ -327,7 +327,7 @@
 		(descr "Resistor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "resistor")
 		(property "Reference" "R7"
-			(at 0 -1.82 360)
+			(at 0 -1.82 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "5f1a693e-d2bd-4529-859c-ef7bf8953fb3")
@@ -339,7 +339,7 @@
 			)
 		)
 		(property "Value" "100k"
-			(at 0 1.82 360)
+			(at 0 1.82 0)
 			(layer "F.Fab")
 			(uuid "ce58b65a-d513-4a02-a5bd-de95ddacf460")
 			(effects
@@ -494,7 +494,7 @@
 			(uuid "37a9c866-3059-426b-b306-b504b8b1853a")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "20404c57-6cc0-4022-b4e6-1b8d196fb721")
 			(effects
@@ -4270,7 +4270,7 @@
 		(descr "Capacitor SMD 1206 (3216 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: IPC-SM-782 page 76, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator")
 		(tags "capacitor")
 		(property "Reference" "C5"
-			(at 0 -1.85 360)
+			(at 0 -1.85 0)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "add5777f-9085-4f65-bf82-f0df0c8e5745")
@@ -4282,7 +4282,7 @@
 			)
 		)
 		(property "Value" "1u"
-			(at 0 1.85 360)
+			(at 0 1.85 0)
 			(layer "F.Fab")
 			(uuid "0b25b7a7-ed50-4004-83b7-2826377a0e01")
 			(effects
@@ -4437,7 +4437,7 @@
 			(uuid "ad546eac-a303-48ca-bf25-f52f16247ea1")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "f7a933ad-0092-4b12-84ba-968eeaadd719")
 			(effects
@@ -6506,6 +6506,38 @@
 		(uuid "d84ffe92-5208-41d7-be45-2be2fb573c77")
 	)
 	(zone
+		(net 14)
+		(net_name "+3.3V")
+		(layer "F.Cu")
+		(uuid "039c4374-b5d3-48ed-9d37-7c1f68164f1f")
+		(hatch edge 0.5)
+		(priority 3)
+		(connect_pads
+			(clearance 0.5)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy 138.5 113.5) (xy 136.5 111.5) (xy 137.5 111.5) (xy 138.5 110.5)
+			)
+		)
+		(filled_polygon
+			(layer "F.Cu")
+			(pts
+				(xy 138.419334 110.68318) (xy 138.475267 110.725052) (xy 138.499684 110.790516) (xy 138.5 110.799362)
+				(xy 138.5 113.200638) (xy 138.480315 113.267677) (xy 138.427511 113.313432) (xy 138.358353 113.323376)
+				(xy 138.294797 113.294351) (xy 138.288319 113.288319) (xy 136.711681 111.711681) (xy 136.678196 111.650358)
+				(xy 136.68318 111.580666) (xy 136.725052 111.524733) (xy 136.790516 111.500316) (xy 136.799362 111.5)
+				(xy 137.5 111.5) (xy 138.288319 110.711681) (xy 138.349642 110.678196)
+			)
+		)
+	)
+	(zone
 		(net 9)
 		(net_name "GND")
 		(layer "F.Cu")
@@ -6564,6 +6596,38 @@
 				(xy 154.427511 105.988794) (xy 154.376 106) (xy 145.624 106) (xy 145.556961 105.980315) (xy 145.511206 105.927511)
 				(xy 145.5 105.876) (xy 145.5 101.624) (xy 145.519685 101.556961) (xy 145.572489 101.511206) (xy 145.624 101.5)
 				(xy 154.376 101.5)
+			)
+		)
+	)
+	(zone
+		(net 14)
+		(net_name "+3.3V")
+		(layer "B.Cu")
+		(uuid "1f3ad4fd-2a92-40cf-bd41-89b0c95a4db2")
+		(hatch edge 0.5)
+		(priority 4)
+		(connect_pads
+			(clearance 0.5)
+		)
+		(min_thickness 0.25)
+		(filled_areas_thickness no)
+		(fill yes
+			(thermal_gap 0.5)
+			(thermal_bridge_width 0.5)
+		)
+		(polygon
+			(pts
+				(xy 156.5 110) (xy 155.5 109) (xy 156 109) (xy 156.5 108.5)
+			)
+		)
+		(filled_polygon
+			(layer "B.Cu")
+			(pts
+				(xy 156.419334 108.68318) (xy 156.475267 108.725052) (xy 156.499684 108.790516) (xy 156.5 108.799362)
+				(xy 156.5 109.700638) (xy 156.480315 109.767677) (xy 156.427511 109.813432) (xy 156.358353 109.823376)
+				(xy 156.294797 109.794351) (xy 156.288319 109.788319) (xy 155.711681 109.211681) (xy 155.678196 109.150358)
+				(xy 155.68318 109.080666) (xy 155.725052 109.024733) (xy 155.790516 109.000316) (xy 155.799362 109)
+				(xy 156 109) (xy 156.288319 108.711681) (xy 156.349642 108.678196)
 			)
 		)
 	)
